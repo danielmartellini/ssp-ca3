@@ -39,8 +39,28 @@
                     <h1>Daniel's Cafe</h1>
                     <p class="lead">Check out our menu:</p>
                 </div>
-                <div id="options" class="col-lg-9">Buttons</div>
-                <div id="results" class="col-lg-10"></div>
+                
+                <div id="results" class="col-lg-10 mb-5 order-2"></div>
+                <div id="menu" class="col-lg-4 mb-5 order-1">
+                    <form enctype="application/json" action="/post/json" method="post">
+                        <div class="form-group">
+                            <select class="form-control" name="sec_n">
+                                <option value="0">Drinks</option>
+                                <option value="1">Side Dishes</option>
+                                <option value="2">Breakfast</option>
+                                <option value="3">Lunch</option>
+                                <option value="4">Dinner</option>
+                            </select>
+                            <input class="form-control mt-3" type="text" name="item" placeholder="Item">
+                            <input class="form-control mt-3" type="text" name="price" placeholder="Price">
+                            <div class="d-grid gap-2"><button type="submit" class="btn btn-primary btn-block mt-3">Submit</button></div>
+                        </div>
+                    </form>
+                    <div class="d-grid gap-2">
+                    <button id="delete" class="btn btn-danger btn-block mt-3">Delete</button></div>
+                    <p class="text-muted text-center">To delete an entree, click the required row first</p>
+                </div>
+            </div>
 
             </div>    
 

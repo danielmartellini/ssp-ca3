@@ -31,6 +31,56 @@ function JSONtoXML(filename, obj, cb) {
     fs.writeFile(filepath, xml, cb);
 };
 
+router.post('/post/json', function (req, res) {
+
+  function appendJSON(obj) {
+
+      console.log(obj)
+
+      XMLtoJSON('DanielsCafe.xml', function (err, result) {
+          if (err) throw (err);
+          
+          result.CAFE.MENUITEM[obj.sec_n].ENTRY.push({'ITEM': obj.ITEM, 'PRICE': obj.PRICE});
+
+          console.log(JSON.stringify(result, null, "  "));
+
+          JSONtoXML('DanielsCafe.xml', result, function(err){
+              if (err) console.log(err);
+          });
+      });
+  };
+
+  appendJSON(req.body);
+
+  res.redirect('back');
+
+});
+
+router.post('/post/delete', function (req, res) {
+
+  function deleteJSON(obj) {
+
+      console.log(obj)
+
+      XMLtoJSON('DanielsCafe.xml', function (err, result) {
+          if (err) throw (err);
+          
+          delete result.CAFE.MENUITEM[obj.MENUITEM].ENTRY[obj.ENTRY];
+
+          console.log(JSON.stringify(result, null, "  "));
+
+          JSONtoXML('DanielsCafe.xml', result, function(err){
+              if (err) console.log(err);
+          });
+      });
+  };
+
+  deleteJSON(req.body);
+
+  res.redirect('back');
+
+});
+
 router.get('/get/html', function(req, res){
 
     res.writeHead(200,{'Content-Type': 'text/html'}); 

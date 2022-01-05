@@ -6,6 +6,7 @@ html {
 body {
 /* Margin bottom by footer height */
 margin-bottom: 60px;
+background-color: azure;
 }
 
 .footer {
@@ -49,3 +50,8 @@ th {
     text-align: center;
     background-color: aqua;
 }
+
+.row{
+    align-items: center;
+}
+
