@@ -35,7 +35,6 @@ router.post('/post/json', function (req, res) {
 
   function appendJSON(obj) {
 
-      console.log(obj)
 
       XMLtoJSON('DanielsCafe.xml', function (err, result) {
           if (err) throw (err);
@@ -60,7 +59,6 @@ router.post('/post/delete', function (req, res) {
 
   function deleteJSON(obj) {
 
-      console.log(obj)
 
       XMLtoJSON('DanielsCafe.xml', function (err, result) {
           if (err) throw (err);
