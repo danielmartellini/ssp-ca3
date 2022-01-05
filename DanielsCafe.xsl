@@ -19,7 +19,7 @@
         <tbody>
             <xsl:for-each select="//MENUITEM">
                 <tr>
-                    <td colspan="3">
+                    <td colspan="2">
                         <xsl:value-of select="@name" />
                     </td>
                 </tr>
@@ -28,9 +28,7 @@
                         <xsl:attribute name="vegetarian">
                             <xsl:value-of select="boolean(@vegetarian)" />
                         </xsl:attribute>
-                        <td align="center">
-                            <input name="item0" type="checkbox" />
-                        </td>
+
                         <td>
                             <xsl:value-of select="ITEM" />
                         </td>
