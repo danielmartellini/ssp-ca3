@@ -1,6 +1,6 @@
 function import_table(){
     $("#results").empty();
-    $.getHTMLuncached = funtion(url){
+    $.getHTMLuncached = function(url){
         return $.ajax({
             url:url,
             type: 'GET',
