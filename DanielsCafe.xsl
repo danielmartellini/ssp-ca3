@@ -1,6 +1,13 @@
 <?xml version="1.0"?> 
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
 <xsl:template match="/">
+<html>
+<head>
+<title>Daniel's Cafe Menu</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" / >
+<link rel="stylesheet" href="css/DanielsCafe.css"/>
+<script type="text/javascript" src="js/DanielsCafe.js">x</script>
+</head>
     <table id="menuTable" border="1" class="indent">
         <thead>
             <tr>

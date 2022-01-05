@@ -9,6 +9,8 @@ xml2js = require('xml2js');
 const router = express(),
 server = http.createServer(router);
 
+router.use(express.static(path.resolve(__dirname,'files'))); //serves static content from "files" folder
+
 router.get('/', function(req, res){
 
     res.writeHead(200,{'Content-Type': 'text/html'}); 
