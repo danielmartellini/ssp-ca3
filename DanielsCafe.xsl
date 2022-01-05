@@ -12,7 +12,7 @@
         <tbody>
             <xsl:for-each select="//MENUITEM">
                 <tr>
-                    <td colspan="2">
+                    <td class="bold" colspan="2">
                         <xsl:value-of select="@name" />
                     </td>
                 </tr>

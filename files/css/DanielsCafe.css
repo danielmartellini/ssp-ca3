@@ -43,3 +43,9 @@ th {
             background-color: #dc3545;
             color: #FFF;
 }
+
+.bold{
+    font-weight: bold;
+    text-align: center;
+    background-color: aqua;
+}
