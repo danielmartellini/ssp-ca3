@@ -23,6 +23,7 @@ table, th, td {
     border-collapse: collapse;
     border: 1px solid black;
     text-align: center;
+
 }
 
 table {
@@ -53,5 +54,13 @@ th {
 
 .row{
     align-items: center;
+}
+
+tr{
+    padding: 20px;
+    
+    width: 100px;
+    height: 100px;
+    position: relative;
 }
 
