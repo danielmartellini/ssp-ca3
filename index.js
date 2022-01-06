@@ -63,7 +63,7 @@ router.post('/post/delete', function (req, res) {
       XMLtoJSON('DanielsCafe.xml', function (err, result) {
           if (err) throw (err);
           
-          delete result.CAFE.MENUITEM[obj.MENUITEM].ENTRY[obj.ENTRY];
+          delete result.CAFE.MENUITEM[obj.MENUITEM].ENTRY[obj.entree];
 
           console.log(JSON.stringify(result, null, "  "));
 
