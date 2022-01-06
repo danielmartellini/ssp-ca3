@@ -39,7 +39,7 @@ router.post('/post/json', function (req, res) {
       XMLtoJSON('DanielsCafe.xml', function (err, result) {
           if (err) throw (err);
           
-          result.menu.MENUITEM[obj.sec_n].ENTRY.push({'item': obj.item, 'price': obj.price});
+          result.CAFE.MENUITEM[obj.sec_n].ENTRY.push({'item': obj.item, 'price': obj.price});
 
           console.log(JSON.stringify(result, null, "  "));
 
