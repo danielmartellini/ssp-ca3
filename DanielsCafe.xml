@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<CAFE>
+<COLLECTION>
     <TYPE  name="Drinks">
         <ENTRY>
             <NAME>Coke</NAME>
@@ -70,4 +70,4 @@
             <SCORE>10.99</SCORE>
         </ENTRY>
     </TYPE>
-</CAFE>
+</COLLECTION>

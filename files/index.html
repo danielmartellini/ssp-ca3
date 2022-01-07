@@ -39,11 +39,12 @@
                     <p class="lead">Check out our menu:</p>
                 </div>
                 
-                <div id="results" class="col-lg-10 mb-5 order-2"></div>
-                <div id="menu" class="col-lg-4 mb-5 order-1">
+                <div id="results" class="col-lg-12 mb-5 order-2"></div>
+                <div id="menu" class="col-lg-4 mb-8 order-1">
                     <form enctype="application/json" action="/post/json" method="post">
                         <div class="form-group">
                             <select class="form-control" name="sec_n">
+                                <option value="" disabled selected>Enter the genre of the Movie or TV Series:</option>
                                 <option value="0">Drinks</option>
                                 <option value="1">Side Dishes</option>
                                 <option value="2">Breakfast</option>

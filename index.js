@@ -39,7 +39,7 @@ router.post('/post/json', function (req, res) {
       XMLtoJSON('DanielsCafe.xml', function (err, result) {
           if (err) throw (err);
           
-          result.CAFE.TYPE[obj.sec_n].ENTRY.push({'NAME': obj.item, 'SCORE': obj.price});
+          result.COLLECTION.TYPE[obj.sec_n].ENTRY.push({'NAME': obj.item, 'SCORE': obj.price});
 
           console.log(JSON.stringify(result, null, "  "));
 
@@ -63,7 +63,7 @@ router.post('/post/delete', function (req, res) {
       XMLtoJSON('DanielsCafe.xml', function (err, result) {
           if (err) throw (err);
           
-          delete result.CAFE.TYPE[obj.section].ENTRY[obj.entree];
+          delete result.COLLECTION.TYPE[obj.section].ENTRY[obj.entree];
 
           console.log(JSON.stringify(result, null, "  "));
 
