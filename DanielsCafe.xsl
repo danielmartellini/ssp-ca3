@@ -5,12 +5,12 @@
     <table id="menuTable" border="1" class="indent">
         <thead>
             <tr>
-                <th>Item</th>
-                <th>Price</th>
+                <th>Name</th>
+                <th>Score</th>
             </tr>
         </thead>
         <tbody>
-            <xsl:for-each select="//MENUITEM">
+            <xsl:for-each select="//TYPE">
                 <tr>
                     <td class="bold" colspan="2">
                         <xsl:value-of select="@name" />
@@ -23,10 +23,10 @@
                         </xsl:attribute>
 
                         <td>
-                            <xsl:value-of select="ITEM" />
+                            <xsl:value-of select="NAME" />
                         </td>
                         <td align="right">
-                            <xsl:value-of select="PRICE" />
+                            <xsl:value-of select="SCORE" />
                         </td>
                     </tr>
                 </xsl:for-each>

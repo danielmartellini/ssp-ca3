@@ -1,73 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CAFE>
-    <MENUITEM  name="Drinks">
+    <TYPE  name="Drinks">
         <ENTRY>
-            <ITEM>Coke</ITEM>
-            <PRICE>2.00</PRICE>
+            <NAME>Coke</NAME>
+            <SCORE>2.00</SCORE>
         </ENTRY>
         <ENTRY>
-            <ITEM>Sprite</ITEM>
-            <PRICE>2.00</PRICE>
+            <NAME>Sprite</NAME>
+            <SCORE>2.00</SCORE>
         </ENTRY>
         <ENTRY  vegetarian="true">
-            <ITEM>Coke Zero</ITEM>
-            <PRICE>1.90</PRICE>
+            <NAME>Coke Zero</NAME>
+            <SCORE>1.90</SCORE>
         </ENTRY>
-    </MENUITEM>
-    <MENUITEM  name="Side Dishes">
+    </TYPE>
+    <TYPE  name="Side Dishes">
         <ENTRY>
-            <ITEM>Chicken Bites</ITEM>
-            <PRICE>9.50</PRICE>
+            <NAME>Chicken Bites</NAME>
+            <SCORE>9.50</SCORE>
         </ENTRY>
         <ENTRY>
-            <ITEM>Taco Chips</ITEM>
-            <PRICE>9.00</PRICE>
+            <NAME>Taco Chips</NAME>
+            <SCORE>9.00</SCORE>
         </ENTRY>
         <ENTRY  vegetarian="true">
-            <ITEM>Salad</ITEM>
-            <PRICE>6.50</PRICE>
+            <NAME>Salad</NAME>
+            <SCORE>6.50</SCORE>
         </ENTRY>
-    </MENUITEM>
-    <MENUITEM  name="Breakfast">
+    </TYPE>
+    <TYPE  name="Breakfast">
         <ENTRY>
-            <ITEM>Chicken Roll</ITEM>
-            <PRICE>4.00</PRICE>
+            <NAME>Chicken Roll</NAME>
+            <SCORE>4.00</SCORE>
         </ENTRY>
         <ENTRY>
-            <ITEM>Breakfast Roll</ITEM>
-            <PRICE>4.50</PRICE>
+            <NAME>Breakfast Roll</NAME>
+            <SCORE>4.50</SCORE>
         </ENTRY>
         <ENTRY  vegetarian="true">
-            <ITEM>Cheese Toast</ITEM>
-            <PRICE>3.50</PRICE>
+            <NAME>Cheese Toast</NAME>
+            <SCORE>3.50</SCORE>
         </ENTRY>
-    </MENUITEM>
-    <MENUITEM  name="Lunch">
+    </TYPE>
+    <TYPE  name="Lunch">
         <ENTRY>
-            <ITEM>Pesto Pasta</ITEM>
-            <PRICE>11.00</PRICE>
+            <NAME>Pesto Pasta</NAME>
+            <SCORE>11.00</SCORE>
         </ENTRY>
         <ENTRY>
-            <ITEM>Chicken Pizza</ITEM>
-            <PRICE>10.50</PRICE>
+            <NAME>Chicken Pizza</NAME>
+            <SCORE>10.50</SCORE>
         </ENTRY>
         <ENTRY  vegetarian="true">
-            <ITEM>Cheese Pizza</ITEM>
-            <PRICE>10.00</PRICE>
+            <NAME>Cheese Pizza</NAME>
+            <SCORE>10.00</SCORE>
         </ENTRY>
-    </MENUITEM>
-    <MENUITEM  name="Dinner">
+    </TYPE>
+    <TYPE  name="Dinner">
         <ENTRY>
-            <ITEM>Roast</ITEM>
-            <PRICE>12.99</PRICE>
+            <NAME>Roast</NAME>
+            <SCORE>12.99</SCORE>
         </ENTRY>
         <ENTRY>
-            <ITEM>Burger</ITEM>
-            <PRICE>11.99</PRICE>
+            <NAME>Burger</NAME>
+            <SCORE>11.99</SCORE>
         </ENTRY>
         <ENTRY  vegetarian="true">
-            <ITEM>Tofu</ITEM>
-            <PRICE>10.99</PRICE>
+            <NAME>Tofu</NAME>
+            <SCORE>10.99</SCORE>
         </ENTRY>
-    </MENUITEM>
+    </TYPE>
 </CAFE>
