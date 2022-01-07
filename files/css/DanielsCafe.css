@@ -6,7 +6,7 @@ html {
 body {
 /* Margin bottom by footer height */
 margin-bottom: 60px;
-background-color: azure;
+background-color: rgba(128, 128, 128, 0.623);
 }
 
 .footer {
@@ -23,6 +23,7 @@ table, th, td {
     border-collapse: collapse;
     border: 1px solid black;
     text-align: center;
+    background-color: rgba(238, 238, 238, 0.623);
 
 }
 
@@ -42,14 +43,14 @@ th {
 }
 
 .selected {
-            background-color: #dc3545;
+            background-color: #0d9eb1;
             color: #FFF;
 }
 
 .bold{
     font-weight: bold;
     text-align: center;
-    background-color: aqua;
+    background-color: rgba(0, 204, 240, 0.952);
 }
 
 .row{
