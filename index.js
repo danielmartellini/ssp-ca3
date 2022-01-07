@@ -36,14 +36,14 @@ router.post('/post/json', function (req, res) {
   function appendJSON(obj) {
 
 
-      XMLtoJSON('DanielsCafe.xml', function (err, result) {
+      XMLtoJSON('DanielsCollection.xml', function (err, result) {
           if (err) throw (err);
           
           result.COLLECTION.TYPE[obj.sec_n].ENTRY.push({'NAME': obj.item, 'SCORE': obj.price});
 
           console.log(JSON.stringify(result, null, "  "));
 
-          JSONtoXML('DanielsCafe.xml', result, function(err){
+          JSONtoXML('DanielsCollection.xml', result, function(err){
               if (err) console.log(err);
           });
       });
@@ -60,14 +60,14 @@ router.post('/post/delete', function (req, res) {
   function deleteJSON(obj) {
 
 
-      XMLtoJSON('DanielsCafe.xml', function (err, result) {
+      XMLtoJSON('DanielsCollection.xml', function (err, result) {
           if (err) throw (err);
           
           delete result.COLLECTION.TYPE[obj.section].ENTRY[obj.entree];
 
           console.log(JSON.stringify(result, null, "  "));
 
-          JSONtoXML('DanielsCafe.xml', result, function(err){
+          JSONtoXML('DanielsCollection.xml', result, function(err){
               if (err) console.log(err);
           });
       });
@@ -83,8 +83,8 @@ router.get('/get/html', function(req, res){
 
     res.writeHead(200,{'Content-Type': 'text/html'}); 
 
-    let xml = fs.readFileSync('DanielsCafe.xml', 'utf8' ),
-    xsl = fs.readFileSync('DanielsCafe.xsl', 'utf8' );
+    let xml = fs.readFileSync('DanielsCollection.xml', 'utf8' ),
+    xsl = fs.readFileSync('DanielsCollection.xsl', 'utf8' );
 
     let doc = xmlParse(xml), 
     stylesheet = xmlParse (xsl);
