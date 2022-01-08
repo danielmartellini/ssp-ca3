@@ -55,6 +55,7 @@ th {
 
 .row{
     align-items: center;
+  justify-content: center;
 }
 
 tr{
