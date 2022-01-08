@@ -1,77 +1,61 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <COLLECTION>
-  <TYPE name="Classics">
-    <ENTRY>
-      <NAME>Sprite</NAME>
-      <SCORE>2.00</SCORE>
-    </ENTRY>
-    <ENTRY>
-      <NAME>Coke Zero</NAME>
-      <SCORE>1.90</SCORE>
-    </ENTRY>
+  <TYPE name="Classics">>
     <ENTRY>
       <NAME>Forrest Gump</NAME>
       <SCORE>10</SCORE>
     </ENTRY>
     <ENTRY>
       <NAME>Avatar</NAME>
-      <SCORE>10</SCORE>
+      <SCORE>9</SCORE>
     </ENTRY>
   </TYPE>
   <TYPE name="Super-Hero Movies">
     <ENTRY>
-      <NAME>Chicken Bites</NAME>
-      <SCORE>9.50</SCORE>
+      <NAME>Spider-Man 3</NAME>
+      <SCORE>100</SCORE>
     </ENTRY>
     <ENTRY>
-      <NAME>Taco Chips</NAME>
-      <SCORE>9.00</SCORE>
+      <NAME>Spider-Man 2</NAME>
+      <SCORE>10</SCORE>
     </ENTRY>
     <ENTRY>
-      <NAME>Salad</NAME>
-      <SCORE>6.50</SCORE>
+      <NAME>Spider-Man</NAME>
+      <SCORE>10</SCORE>
     </ENTRY>
   </TYPE>
   <TYPE name="Sports Movies">
     <ENTRY>
-      <NAME>Chicken Roll</NAME>
-      <SCORE>4.00</SCORE>
+      <NAME>Rocky Series</NAME>
+      <SCORE>10</SCORE>
     </ENTRY>
     <ENTRY>
-      <NAME>Breakfast Roll</NAME>
-      <SCORE>4.50</SCORE>
-    </ENTRY>
-    <ENTRY>
-      <NAME>Cheese Toast</NAME>
-      <SCORE>3.50</SCORE>
+      <NAME>Coach Carter</NAME>
+      <SCORE>9</SCORE>
     </ENTRY>
   </TYPE>
   <TYPE name="Adventure Movies">
     <ENTRY>
-      <NAME>Pesto Pasta</NAME>
-      <SCORE>11.00</SCORE>
+      <NAME>Indiana Jones</NAME>
+      <SCORE>9</SCORE>
     </ENTRY>
     <ENTRY>
-      <NAME>Chicken Pizza</NAME>
-      <SCORE>10.50</SCORE>
-    </ENTRY>
-    <ENTRY>
-      <NAME>Cheese Pizza</NAME>
-      <SCORE>10.00</SCORE>
+      <NAME>Fast and Furious 8</NAME>
+      <SCORE>3</SCORE>
     </ENTRY>
   </TYPE>
   <TYPE name="TV SHOWS">
     <ENTRY>
-      <NAME>Roast</NAME>
-      <SCORE>12.99</SCORE>
+      <NAME>The Office</NAME>
+      <SCORE>10</SCORE>
     </ENTRY>
     <ENTRY>
-      <NAME>Burger</NAME>
-      <SCORE>11.99</SCORE>
+      <NAME>How I met your mother</NAME>
+      <SCORE>9</SCORE>
     </ENTRY>
     <ENTRY>
-      <NAME>Tofu</NAME>
-      <SCORE>10.99</SCORE>
+      <NAME>Friends</NAME>
+      <SCORE>3</SCORE>
     </ENTRY>
   </TYPE>
 </COLLECTION>
