@@ -10,7 +10,7 @@
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
-        <link href="css/DanielsCafe.css" rel="stylesheet" />
+        <link href="css/DanielsCollection.css" rel="stylesheet" />
         <script
         src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
@@ -36,11 +36,15 @@
             <div class="row">
                 <div class="text-center mt-5">
                     <h1>Daniel's Movie Collection</h1>
-                    <p class="lead">Check out our menu:</p>
+                    <p class="lead">Check out our selection:</p>
                 </div>
                 
-                <div id="results" class="col-lg-12 mb-5 order-2"></div>
-                <div id="menu" class="col-lg-4 mb-8 order-1">
+                <div id="results" class="col-lg-10 mb-5 order-2"></div>
+                <a  class="order-3" href="https://github.com/danielmartellini/ssp-ca3/" target="_blank">
+                    <img alt="Link for my repository" src="img/icons8-github-90.png"
+                    width=90" height="90">
+                 </a>
+                <div id="menu" class="col-lg-10 mb-5 order-1">
                     <form enctype="application/json" action="/post/json" method="post">
                         <div class="form-group">
                             <select class="form-control" name="sec_n">
@@ -73,7 +77,7 @@
                     </form>
                     <div class="d-grid gap-2">
                     <button id="delete" class="btn btn-danger btn-block mt-3">Delete</button></div>
-                    <p class="text-muted text-center">To delete an entree, click the required row first</p>
+                    <p class="text-muted text-center">To delete a title, click the required row first and then click on delete</p>
                 </div>
             </div>
 
