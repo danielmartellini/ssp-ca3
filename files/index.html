@@ -7,7 +7,7 @@
         <meta name="author" content="" />
         <title>Daniel's Cafe</title>
         <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <link rel="icon" type="image/x-icon" href="img/icons8-movie-48.png" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
         <link href="css/DanielsCollection.css" rel="stylesheet" />
@@ -39,15 +39,16 @@
                     <p class="lead">Check out our selection:</p>
                 </div>
                 
-                <div id="results" class="col-lg-10 mb-5 order-2"></div>
-                <a  class="order-3" href="https://github.com/danielmartellini/ssp-ca3/" target="_blank">
+                <div id="results" class="col-lg-10 mb-5 order-1"></div>
+                
+                <div class="text-center order-3"><a  href="https://github.com/danielmartellini/ssp-ca3/" target="_blank">
                     <img alt="Link for my repository" src="img/icons8-github-90.png"
                     width=90" height="90">
-                 </a>
-                <div id="menu" class="col-lg-10 mb-5 order-1">
+                 </a></div>
+                <div id="menu" class="col-lg-10 mb-5 order-2">
                     <form enctype="application/json" action="/post/json" method="post">
                         <div class="form-group">
-                            <select name="select-1" id="condition-type" name="select" class="form-control form-required" name="sec_n">
+                            <select name="select-1" name="select" class="form-control form-required" name="sec_n">
                                 <option value="" disabled selected>Enter the genre of the Movie or TV Series:</option>
                                 <option value="0">Classics</option>
                                 <option value="1">Super-Hero Movies</option>
@@ -55,9 +56,9 @@
                                 <option value="3">Adventure Movies</option>
                                 <option value="4">TV SHOWS</option>
                             </select>
-                            <input name="input" id="condition-name" class="form-control mt-3 form-required" type="text" placeholder="Enter the name of the Movie or TV Series" minlength="4">
+                            <input name="input" class="form-control mt-3 form-required" type="text" placeholder="Enter the name of the Movie or TV Series" minlength="4">
 
-                            <select name="testselect" id="condition-score" class="form-control mt-3 form-required" type="text" name="price">
+                            <select name="testselect" class="form-control mt-3 form-required" type="text" name="price">
                                 <option value="" disabled selected>Select the movie score:</option>
                                 <option value="0">0</option>
                                 <option value="1">1</option>
@@ -77,7 +78,7 @@
                     </form>
                     <div class="d-grid gap-2">
                     <button name="delete" id="delete" class="btn btn-danger btn-block mt-3">Delete</button></div>
-                    <p class="text-muted text-center">To delete a title, click the required row first and then click on delete</p>
+                    <p class="text-muted text-center">*To delete a title, click on the required row and then click on delete</p>
                 </div>
             </div>
 
