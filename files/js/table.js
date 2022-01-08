@@ -1,4 +1,19 @@
+$(document).ready(function() {
 
+	$('button[name="delete"]').prop('disabled',true);
+	
+  
+	(function() {
+
+		$("body").click(function() {
+			if ($(".selected").length > 0) {
+				$('button[name="delete"]').removeAttr("disabled")
+			}
+		});
+	 	
+	  
+	})();
+  });
 
 $(document).ready(function() {
 
