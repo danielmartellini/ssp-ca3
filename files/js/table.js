@@ -1,3 +1,27 @@
+
+
+$(document).ready(function() {
+
+	$('button[name="submit_button"]').prop('disabled',true);
+	
+  
+	(function() {
+	  $(".form-required").change(function() {
+		var empty = false;
+		$(".form-required").each(function() {
+		  if ($(this).val() === "") {
+			empty = true;
+		  }
+		});
+  
+		if (empty) {
+		  $('button[name="submit_button"]').attr("disabled", "disabled");
+		} else {
+		  $('button[name="submit_button"]').removeAttr("disabled");
+		}
+	  });
+	})();
+  });
 function draw_table()
 {
 	$("#results").empty();

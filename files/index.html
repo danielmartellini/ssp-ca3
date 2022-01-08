@@ -47,7 +47,7 @@
                 <div id="menu" class="col-lg-10 mb-5 order-1">
                     <form enctype="application/json" action="/post/json" method="post">
                         <div class="form-group">
-                            <select class="form-control" name="sec_n">
+                            <select name="select-1" id="condition-type" name="select" class="form-control form-required" name="sec_n">
                                 <option value="" disabled selected>Enter the genre of the Movie or TV Series:</option>
                                 <option value="0">Classics</option>
                                 <option value="1">Super-Hero Movies</option>
@@ -55,9 +55,9 @@
                                 <option value="3">Adventure Movies</option>
                                 <option value="4">TV SHOWS</option>
                             </select>
-                            <input class="form-control mt-3" type="text" name="item" placeholder="Enter the name of the Movie or TV Series" minlength="4">
+                            <input name="input" id="condition-name" class="form-control mt-3 form-required" type="text" placeholder="Enter the name of the Movie or TV Series" minlength="4">
 
-                            <select class="form-control mt-3" type="text" name="price">
+                            <select name="testselect" id="condition-score" class="form-control mt-3 form-required" type="text" name="price">
                                 <option value="" disabled selected>Select the movie score:</option>
                                 <option value="0">0</option>
                                 <option value="1">1</option>
@@ -72,7 +72,7 @@
                                 <option value="10">10</option>
 
                             </select>
-                            <div class="d-grid gap-2"><button type="submit" class="btn btn-info btn-block mt-3">Submit</button></div>
+                            <div class="d-grid gap-2"><button name="submit_button" type="submit"  class="btn btn-info btn-block mt-3"  >Submit</button></div>
                         </div>
                     </form>
                     <div class="d-grid gap-2">
