@@ -1,3 +1,5 @@
+//taken from https://github.com/mikhail-cct/ssp-practical/ and edited to be used in my application
+
 const http = require('http'),
 path = require('path'),
 express = require('express'), 

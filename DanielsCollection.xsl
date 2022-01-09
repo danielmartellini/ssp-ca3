@@ -1,3 +1,5 @@
+<! -- taken from https://github.com/mikhail-cct/ssp-practical/ and edited to be used with my xml file-->
+
 <?xml version="1.0"?> 
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
 <xsl:template match="/">
@@ -12,6 +14,7 @@
         <tbody>
             <xsl:for-each select="//TYPE">
                 <tr>
+                <!-- only 2 columns-->
                     <td class="bold" colspan="2">
                         <xsl:value-of select="@name" />
                     </td>
@@ -21,6 +24,7 @@
                         <td>
                             <xsl:value-of select="NAME" />
                         </td>
+                        <!--giving a class to my values-->
                         <td class="value" align="right">
                             <xsl:value-of select="SCORE" />
                         </td>
