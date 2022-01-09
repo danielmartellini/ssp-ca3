@@ -108,6 +108,11 @@ $(document).ready(function() {
 		  if (cellValue < 5) {
 			$(this).css('background-color','red');
 		  }
+		  else if(cellValue <= 8 && cellValue > 5)
+		  {
+			$(this).css('background-color','#90EE90');
+		  }
+
 	    else{
 		   $(this).css('background-color','green');
 		   }
@@ -125,6 +130,10 @@ $(document).ready(function() {
 		if(!isNaN(parseFloat(cellValue))) {
 		  if (cellValue < 5) {
 			$(this).css('background-color','red');
+		  }
+		  else if(cellValue <= 8 && cellValue > 5)
+		  {
+			$(this).css('background-color','#90EE90');
 		  }
 	    else{
 		   $(this).css('background-color','green');
