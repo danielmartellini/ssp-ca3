@@ -114,7 +114,7 @@ $(document).ready(function() {
 		}
 	});
 	  
-	}, 500); // for 5 second delay 
+	}, 500); // for half second delay 
   });
   
   	
@@ -132,7 +132,7 @@ $(document).ready(function() {
 		}
 	});
 	  
-	}, 1000); // for 1 second delay 
+	}, 1500); // for half second delay 
   });
 });
 
