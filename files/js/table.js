@@ -126,14 +126,7 @@ $(document).ready(function() {
 	}, 500); // for 5 second delay 
   });
   
-  
-		
-	
-	  
-	
-  
-
-	
+  	
 
   $(document).ready(function() { $('button[name="delete"]').on('click',function() {
 	setTimeout(function() { $('.value').each(function(){
@@ -148,10 +141,18 @@ $(document).ready(function() {
 		}
 	});
 	  
-	}, 2000); // for 5 second delay 
+	}, 1000); // for 1 second delay 
   });
 });
 
 	
+  
+		
+	
+	  
+	
+  
+
+
 
    
