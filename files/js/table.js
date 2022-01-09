@@ -1,19 +1,5 @@
+//disables delete button until row is selected
 $(document).ready(function() {
-	var score = parseInt($('td[class="value"]').text());
-	if (score <= 5) {
-	  $('.value').css('color', 'red');
-	
-	} else  {
-	  $('.value').css('color', 'green');
-	}
-  });
-
-
-  
-$(document).ready(function() {
-
-
-	
 
 	$('button[name="delete"]').prop('disabled',true);
 	
@@ -30,6 +16,7 @@ $(document).ready(function() {
 	})();
   });
 
+  //disable submit button until everything is filled
 $(document).ready(function() {
 
 	$('button[name="submit_button"]').prop('disabled',true);
@@ -52,6 +39,8 @@ $(document).ready(function() {
 	  });
 	})();
   });
+
+  //taken from https://github.com/mikhail-cct/ssp-practical/
 function draw_table()
 {
 	$("#results").empty();
@@ -109,6 +98,8 @@ $(document).ready(function ()
 
 });
 
+//changes background color based on movie score 
+//loads when page is ready, used timeout because table also has 
 
 $(document).ready(function() {
 	setTimeout(function() { $('.value').each(function(){
