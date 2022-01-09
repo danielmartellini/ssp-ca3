@@ -21,7 +21,7 @@
                         <td>
                             <xsl:value-of select="NAME" />
                         </td>
-                        <td align="right">
+                        <td class="value" align="right">
                             <xsl:value-of select="SCORE" />
                         </td>
                     </tr>

@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <COLLECTION>
-  <TYPE name="Classics">>
+  <TYPE name="Classics">
+    &gt;
+    
+    
+  
     <ENTRY>
       <NAME>Forrest Gump</NAME>
       <SCORE>10</SCORE>
@@ -56,6 +60,10 @@
     <ENTRY>
       <NAME>Friends</NAME>
       <SCORE>3</SCORE>
+    </ENTRY>
+    <ENTRY>
+      <NAME>The Witcher</NAME>
+      <SCORE>8</SCORE>
     </ENTRY>
   </TYPE>
 </COLLECTION>

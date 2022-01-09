@@ -1,4 +1,19 @@
 $(document).ready(function() {
+	var score = parseInt($('td[class="value"]').text());
+	if (score <= 5) {
+	  $('.value').css('color', 'red');
+	
+	} else  {
+	  $('.value').css('color', 'green');
+	}
+  });
+
+
+  
+$(document).ready(function() {
+
+
+	
 
 	$('button[name="delete"]').prop('disabled',true);
 	
@@ -91,4 +106,52 @@ function delete_row(sec, ent)
 $(document).ready(function ()
 {
 	draw_table();
+
 });
+
+
+$(document).ready(function() {
+	setTimeout(function() { $('.value').each(function(){
+		var cellValue = $(this).html();
+		if(!isNaN(parseFloat(cellValue))) {
+		  if (cellValue < 5) {
+			$(this).css('background-color','red');
+		  }
+	    else{
+		   $(this).css('background-color','green');
+		   }
+		}
+	});
+	  
+	}, 500); // for 5 second delay 
+  });
+  
+  
+		
+	
+	  
+	
+  
+
+	
+
+  $(document).ready(function() { $('button[name="delete"]').on('click',function() {
+	setTimeout(function() { $('.value').each(function(){
+		var cellValue = $(this).html();
+		if(!isNaN(parseFloat(cellValue))) {
+		  if (cellValue < 5) {
+			$(this).css('background-color','red');
+		  }
+	    else{
+		   $(this).css('background-color','green');
+		   }
+		}
+	});
+	  
+	}, 2000); // for 5 second delay 
+  });
+});
+
+	
+
+   
